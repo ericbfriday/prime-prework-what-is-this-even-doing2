@@ -70,13 +70,13 @@ console.log(value);
 //step 8
 var array = [];
 
-for(i = 0; i < value.length; i ++){
+for(var i = 0; i < value.length; i ++){
 	array.push(parseInt(value.charAt(i)));
 }
 
 value = 0;
 
-for(i = 0; i < array.length; i ++){
+for(var i = 0; i < array.length; i ++){
 	value += array[i];
 }
 
