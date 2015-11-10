@@ -65,7 +65,7 @@ if(value == 90){
 
 //step 8
 value = value * parseInt(array[2]);
-console.log("Final Answer, does it equal 18? : " + value);
+console.log(value);
 
 function augmentA(){
 	if(value <= 10){
