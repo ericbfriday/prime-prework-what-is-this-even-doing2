@@ -14,17 +14,20 @@ if(a > b && c > a){
 } else {
 	value = 10 * 2;
 }
-console.log(value);
+console.log("value after step 1: ", value);
+
 //step 2
 augmentA();
 
 value += (a + b + c);
-console.log(value);
+console.log("value after step 2: ", value);
+
 //step 3
 augmentA();
 
 value += (a + b + c);
-console.log(value);
+console.log("value after step 3: ", value);
+
 //step 4
 var a = "65"
 
@@ -32,7 +35,8 @@ value += a;
 a = parseInt(a);
 value = parseInt(value);
 value += a;
-console.log(value);
+console.log("value after step 4: ", value);
+
 //step 5
 if(value > 8000){
 	value = 3;
@@ -40,15 +44,15 @@ if(value > 8000){
 	value = 5;
 }
 
-value = value.toString()
+value = value.toString();
 value = value + value + value;
-console.log(value);
+console.log("value after step 5: ", value);
 
 //step 6
 augmentB(value);
 
 value = value / 111;
-console.log(value);
+console.log("value after step 6: ", value);
 
 //step 7
 if(value == 6){
@@ -66,7 +70,8 @@ if(value == 6){
 }
 
 value += "0";
-console.log(value);
+console.log("value after step 7: ", value);
+
 //step 8
 var array = [];
 
@@ -96,4 +101,4 @@ function augmentB(val) {
 }
 
 //What does value equal?
-console.log(value);
+console.log("value after step 8/Final: ", value);

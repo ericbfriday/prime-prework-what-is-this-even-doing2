@@ -6,7 +6,8 @@ var value = "1";
 for(var i = 0; i < 4; i++){
   value += 1;
 }
-console.log(value);
+console.log('step 1: ', value);
+
 //step 2
 var array = [];
 
@@ -15,19 +16,20 @@ for(i = 0; i < value.length; i++){
 }
 
 array[0] = 5;
-console.log(array);
-console.log(value);
+console.log('step 2: ', value);
+
 //step 3
 value = array.pop();
 value += array.shift();
 
 value = parseInt(value);
-console.log(value);
+console.log('step 3: ', value);
+
 //step 4
 augmentA();
 augmentA();
 augmentA();
-console.log(value);
+console.log('step 4: ', value);
 
 //step 5
 while(i > 0){
@@ -35,7 +37,7 @@ while(i > 0){
   value += value;
   i--;
 }
-console.log(value);
+console.log("step 5: ", value);
 
 //step 6
 var a = 73;
@@ -46,18 +48,18 @@ a = a + b;
 a = a + c;
 
 value = value + a;
-console.log(value);
+console.log("step 6: ", value);
 
 //step 7
 augmentB(value);
 augmentA();
 augmentB(value);
 
-console.log(value);
+console.log('step7/Final: ', value);
 
 function augmentA() {
-  if(value > 15){
-    value = 1; 
+  if(value > 10){
+    value = 1;
   } else if(value.length > 3){
     value = 16;
   } else {
